@@ -9,6 +9,11 @@
 
 def checkisPallendrome(text):
     result = False
+    text = text.replace(" ", "")
+    text = text.lower()
+    if (text == text[::-1]):
+        result = True
+        return result
     return result
 
 
